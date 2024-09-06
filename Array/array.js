@@ -30,4 +30,26 @@ let numbers = [1, 2, 3, 4, 5];
 let doubledNumbers = numbers.map(number => number * 2);
 console.log("Doubled numbers:", doubledNumbers)
 
-//
+//Program 7 Use the `filter` method to create an array `evenNumbers` with only the even numbers from the `numbers` array. Log the result.
+let evenNumbers = numbers.filter(number => number % 2 === 0);
+console.log("Even numbers:", evenNumbers)
+
+//Program 8 Use the `reduce` method to sum all the numbers in the `numbers` array and log the result.
+let sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log("Sum of numbers:", sum)
+
+// 9. Create a multi-dimensional array `matrix` with 2 rows and 3 columns, then log each element in a nested loop.
+let matrix = [
+    [1, 2, 3],
+    [4, 5, 6]
+  ];
+console.log("Matrix elements:");
+for (let i = 0; i < matrix.length; i++) {
+  for (let j = 0; j < matrix[i].length; j++) {
+    console.log(matrix[i][j]);
+  }
+}
+
+// 10. Sort the `fruits` array alphabetically using the `sort` method and log the sorted array.
+fruits.sort();
+console.log("Sorted fruits:", fruits)
